@@ -1,0 +1,49 @@
+.product-card {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+
+    .product-card-left-images {
+        display: inherit;
+        flex-direction: column;
+        gap: 5px;
+        max-width: 15%;
+    }
+
+    .product-card-brand-image {
+        max-width: 35%;
+    }
+
+    .product-card-description {
+        max-width: 50%;
+        display: inherit;
+        gap: 30px;
+        flex-direction: column;
+
+        .product-card-informations {
+            display: inherit;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+
+            .product-card-price {
+                display: inherit;
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .button-add-to-cart {
+                color: white;
+                background-color: var(--green);
+
+                &:active {
+                    background-color: var(--dark-green);
+                }
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+}

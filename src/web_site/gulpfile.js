@@ -7,8 +7,8 @@ const htmlmin = require("gulp-htmlmin");
 const connect = require("gulp-connect");
 
 const paths = {
-  html: ["*.html", "src/controllers/**/*.html"],
-  scripts: ["src/app.js", "src/controllers/**/*.js"],
+  html: ["*.html", "src/controllers/**/*.html", "src/components/**/*.html"],
+  scripts: ["src/app.js", "src/controllers/**/*.js", "src/components/**/*.js"],
   styles: "src/styles/**/*.scss",
 };
 

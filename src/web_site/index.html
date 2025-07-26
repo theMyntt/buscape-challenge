@@ -6,8 +6,9 @@
         <link rel="stylesheet" href="main.min.css" />
         <script src="libs/angular.min.js"></script>
     </head>
-    <body ng-controller="MainController">
+    <body ng-controller="MainController as ctrl">
         <h1>{{ helloWorld }}</h1>
+        <card-menu product="ctrl.product"></card-menu>
 
         <script src="app.min.js"></script>
     </body>

@@ -1,0 +1,29 @@
+<div class="product-card">
+    <div class="product-card-left-images">
+        <img ng-repeat="image in $ctrl.product.images" src="{{ image }}" />
+    </div>
+    <div class="product-card-brand-image">
+        <img src="{{ $ctrl.product.selectedImage }}" />
+    </div>
+    <div class="product-card-description">
+        <h2>{{ $ctrl.product.name }}</h2>
+        <hr />
+        <div class="product-card-informations">
+            <div class="product-card-price">
+                <h3 class="green">
+                    <span class="little-text">
+                        {{ $ctrl.product.parcel }}x R$
+                    </span>
+                    {{ $ctrl.product.parcelValue }}
+                </h3>
+                <h4>
+                    ou <span class="green">R${{ $ctrl.product.price }}</span> à
+                    vista
+                </h4>
+            </div>
+            <button class="button button-add-to-cart">
+                Adicionar ao carrinho
+            </button>
+        </div>
+    </div>
+</div>
